@@ -1,49 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+
+
+  <head>
     <meta charset="UTF-8">
+    <!--Responsive meta tag added-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
     <title>Contact</title>
+
+
     <!--Linking to bootstrap css-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!--Linking stylesheet for social media icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Linking relative stylesheet for overide of bootstrap-->
     <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-        <!--Nav bar added with logo to external link and internal links to contact and portfolio-->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="./biography.html">Andrew Trabucco</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  </head>
+
+  <body>
+    <!--Adding Navbar with collapse option and drop down menu-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="./biography.html">Andrew Trabucco</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
-          </button>
+        </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          
+          <li class="nav-item active">
             <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="./portfolio.html">Portfolio</a>
-            </li>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="./contact.html">Contact</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="./biography.html">Bio</a>
-            </li>   
-      </nav> 
+          </li>
+          
+          <li class="nav-item">
+          <a class="nav-link" href="./portfolio.html">Portfolio</a>
+          </li>
+         
+          <li class="nav-item">
+          <a class="nav-link" href="./contact.html">Contact</a>
+          </li>
+          
+          <li class="nav-item">
+          <a class="nav-link" href="./biography.html">Bio</a>
+          </li> 
+      </div>  
+    </nav> 
 
-      <main class="container-fluid">
-        <div class="row">
-            <div class="col-sm">
-            "Heres how you can connect with me through social media or email me if you like!"
-            <img src="assets/Images/aproductionlogo.png" class="img-fluid" alt="Production Logo"/>
-            </div> 
-        </div>       
+    <!--Adding repsonsive container-->
+    <main class="container-fluid">
+      <div class="alert alert-primary" role="alert">
+        <strong>Contact Me:  </strong>Enter your Name & Email so I can keep in touch!  We do NOT share your information with anyone.
+      </div>
+      <div class="row">
+      <div class="col-lg">        
+      <img src="assets/Images/aproductionlogo.png" class="img-fluid" alt="Production Logo"/>     
     </main>
+    
+    <!--Adding form to let user enter contact information-->
+    <form class="container-fluid">
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Name</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your Name">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        <br>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </form>
+    
+    <!--Adding social media icons, fixed to bottom, with css attributes from style.css over-riding bootstrap-->
+    <div class="fixed-bottom">
+      <a href="https://www.facebook.com/andrew.trabucco.5" class="fa fa-facebook"></a>
+      <a href="https://www.linkedin.com/in/andrew-trabucco-5b1a8821/" class="fa fa-linkedin"></a> 
+      <a href="https://github.com/andrewtrabucco" class="fa fa-github"></a>
+     </div>
+    
+    <!--Running Javascript...JQuery, Popper.js, bootstrap scripts for drop down menu elements-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</body>
+  </body>
+
+
 </html>
