@@ -1,7 +1,7 @@
-.container {
+/* .container {
     max-width: 100%;
     height: auto;
-}
+} */
 
 #card-image-1, #card-image-2, #card-image-3, #card-image-4 {
     width: 400px;
@@ -11,21 +11,13 @@
     
 }
 
-
-.bd-placeholder-img {
-    font-size: 1.125rem;
-    text-anchor: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-.jumbotron {
-    margin-top: 10px;
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    text-align: center;
+.jumbotron{
+    background: url("./assets/aproductionlogo.png") no-repeat center center; 
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    padding: 15em;
 }
 
 #page-title, #paragraph-1, #paragraph-2 {
